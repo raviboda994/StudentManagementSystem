@@ -1,0 +1,11 @@
+<?php
+session_start();
+if(isset($_SESSION['admin'])=="")
+{
+	header("location:index.php?stop=1");
+	exit(0);
+}
+$_SESSION['admin']='';
+session_destroy();
+header("location:index.php?m1=1");
+?>

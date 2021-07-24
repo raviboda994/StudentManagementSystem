@@ -1,0 +1,1 @@
+<h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart"></span>SMS<span class="dashboard_text">Student Mgmt. System</span></a></h1>
