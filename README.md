@@ -1,4 +1,4 @@
 # StudentManagementSystem
 Student Management System
 This software is used for managing students information.
-This is a Opensiource software.
+This is a Opensource software.
