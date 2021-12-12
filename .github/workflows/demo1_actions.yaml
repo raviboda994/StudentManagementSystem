@@ -6,6 +6,6 @@ jobs:
     runs-on: ['self-hosted','Linux','X64']
     steps:
       - name: cloning repository
-        run: cd /var/www/htm && git clone https://github.com/raviboda994/StudentManagementSystem.git
+        run: cd /var/www/html && git clone https://github.com/raviboda994/StudentManagementSystem.git
       - name: change ownership
         run: chown -R www-data:www-data /var/www/
