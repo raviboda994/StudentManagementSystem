@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: change ownership
-        run: chown -r www-data:www-data /var/www/
+        run: chown -R www-data:www-data /var/www/
