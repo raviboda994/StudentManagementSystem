@@ -1,1 +1,10 @@
 name: demo_actions
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ['self-hosted','Linux','X64']
+    steps:
+      - uses: actions/checkout@v2
+      - name: change ownership
+        run: chown -r www-data:www-data /var/www/
