@@ -5,8 +5,8 @@ jobs:
   build:
     runs-on: ['self-hosted','Linux','X64']
     steps:
-      - name: change dir
-        run: cd /var/www/html
       - uses: actions/checkout@v2
+        with:
+          path: /var/www/html
       - name: change ownership
         run: chown -R www-data:www-data /var/www/
