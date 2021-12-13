@@ -5,7 +5,6 @@ jobs:
   build:
     runs-on: ['self-hosted','Linux','X64']
     steps:
-      - name: cloning repository
-        run: cd /var/www/html/StudentManagementSystem/ && git pull origin master
+      - uses: actions/checkout@v2
       - name: change ownership
         run: chown -R www-data:www-data /var/www/
