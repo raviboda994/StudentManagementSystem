@@ -7,6 +7,6 @@ if(isset($_SESSION['admin'])=="")
 }
 include("connect.php");
 $i=$_REQUEST['did'];
-mysql_query("delete from inquiry where iid=$i")or die ("QF");
+mysqli_query($con,"delete from inquiry where iid=$i")or die ("QF");
 header("location:show_inquiry.php?i2=2");
 ?>
